@@ -1,5 +1,10 @@
+from libs import lib_calculate_pi
+from utils.timer import timer
+
+
+@timer
 def calculate_pi(n_iter: int) -> float:
-    return 3.14
+    return lib_calculate_pi.lib.calculatePi(n_iter)
 
 
 if __name__ == "__main__":
